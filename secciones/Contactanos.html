@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../estilos/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imagenes/favicon.png">
+    <title>Contact Us</title>
+</head>
+
+<body id="bodyP5">
+    <header>
+        <a href="../index.html"><img src="../imagenes/wwt logo.png" alt="logo de la pagina" id="pagIcon"></a>
+        <nav class="navBar">
+            <ul id="menuPag">
+                <li><a button class="navBarButton" href="../index.html">Inicio</a></li>
+                <li><a button class="navBarButton" href="./Destinos.html">Destinos</a></li>
+                <li><a button class="navBarButton" href="./Promociones.html">Promociones</a></li>
+                <li><a button class="navBarButton" href="./Reservas.html">Reservas</a></li>
+                <li><a button class="navBarButton" href="./Contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="divContact">
+            <h1 id="tituloContacto">Contáctanos</h1>
+            <form id="formContact">
+                <label for="nombre" class="p5Label">Nombre</label>
+                <input type="text" name="nombre" class="inputP5"><br>
+                <label for="apellido" class="p5Label">Apellido</label>
+                <input type="text" nombre="apellido" class="inputP5"><br>
+                <label for="email" class="p5Label"> Email</label>
+                <input type="email" name="email" placeholder="ejemplo@ejemplo.com" class="inputP5"><br>
+                <label for="News" class="p5Label">¿Desea recibir las noticias de este sitio?</label>
+                <input type="checkbox" name="News" class="inputP5"><br>
+                <label for="estadoCivil" class="p5Label"> Indique su estado civil</label><br>
+                <select name="estadoCivil" id="estadoCivilSelect">
+                    <option disabled selected hidden>Seleccione aquí su estado civil</option>
+                    <option>Soletro/a</option>
+                    <option>Casado/a</option>
+                    <option>Concubinato</option>
+                </select><br>
+                <label for="textarea" class="p5Label">Cuerpo del mensaje</label><br>
+                <textarea class="textAreaP5" name="textarea" rows="10" cols="50"
+                    placeholder="Deje aquí su mensaje"></textarea><br>
+                <input type="submit" id="botonEnviarContact">
+            </form>
+
+        </div>
+        <div id="helpWidgetButton">
+            <a id="helpButton" href="./pag_5.html"></a>
+        </div>
+        <div id="patrocinador">
+            <h2>Este sitio está desarrollado gracias a Coderhouse.</h2>
+            <iframe id="videoP5" width="560" height="315" src="https://www.youtube.com/embed/YPJwPRTGmyw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright">
+            Todos los derechos Reservados.©Diciembre/2021
+            Página desarrollada por Katriel Espino.
+        </div>
+        <div id="contactDeveloper">
+            <a href="https://www.facebook.com/elcorde95">Facebook</a>
+            <a href="https://twitter.com/KaEsFa">Twitter</a>
+            <a href="https://www.instagram.com/katrielk/">Instagram</a>
+            <a href="https://www.linkedin.com/in/katrielespino/">LinkedIn</a>
+        </div>
+        <div id="socMedSharing">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                data-show-count="false">Tweet it!</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </footer>
+</body>
+
+</html>

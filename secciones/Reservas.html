@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../estilos/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imagenes/favicon.png">
+    <title>Reserva</title>
+</head>
+
+<body id="bodyP4">
+    <header>
+        <a href="../index.html"><img src="../imagenes/wwt logo.png" alt="logo de la pagina" id="pagIcon"></a>
+        <nav class="navBar">
+            <ul id="menuPag">
+                <li><a button class="navBarButton" href="../index.html">Inicio</a></li>
+                <li><a button class="navBarButton" href="./Destinos.html">Destinos</a></li>
+                <li><a button class="navBarButton" href="./Promociones.html">Promociones</a></li>
+                <li><a button class="navBarButton" href="./Reservas.html">Reservas</a></li>
+                <li><a button class="navBarButton" href="./Contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="divFormReserva">
+            <h1 id="tituloReservas">Reservas</h1>
+            <form id="formReserva">
+                <label class="p4Label" for="paisOrigen">Ingrese aquí el país desde el cual viaja</label>
+                <input class="inputP4" type="text" name="paisOrigen">
+                <label for="paisIda" class="p4Label">Indique el país al que desea viajar</label>
+                <input class="inputP4" type="text" name="paisIda">
+                <label for="fechaIda" class="p4Label">Indique en que fecha desea viajar</label>
+                <input class="inputP4" type="date" name="fechaIda">
+                <label for="fechaRegreso" class="p4Label">Ingrese fecha de regreso</label>
+                <input class="inputP4" type="date" name="fechaRegreso">
+                <label for="ida" class="p4Label">Solo ida</label>
+                <input type="checkbox" name="ida">
+                <label for="adultos" class="p4Label">Indique cantidad de adultos</label>
+                <select name="adultos" class="reservaSelect">
+                    <option>0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+                <label for="menores">Indique cantidad de menores</label>
+                <select name="menores" class="reservaSelect">
+                    <option>0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+                <input type="submit" value="Buscar" id="botonEnviarReserva">
+            </form>
+
+        </div>
+
+
+        <div id="helpWidgetButton">
+            <a id="helpButton" href="./pag_5.html"></a>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright">
+            Todos los derechos Reservados.©Diciembre/2021
+            Página desarrollada por Katriel Espino.
+        </div>
+        <div id="contactDeveloper">
+            <a href="https://www.facebook.com/elcorde95">Facebook</a>
+            <a href="https://twitter.com/KaEsFa">Twitter</a>
+            <a href="https://www.instagram.com/katrielk/">Instagram</a>
+            <a href="https://www.linkedin.com/in/katrielespino/">LinkedIn</a>
+        </div>
+        <div id="socMedSharing">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                data-show-count="false">Tweet it!</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </footer>
+
+</body>
+<!-- Esta página debería de re-dirigir a las personas a una reserva de tickets que muestre los vuelos disponibles-->
+
+</html>
