@@ -11,9 +11,13 @@
 </head>
 
 <body id="bodyP5">
-    <header>
-        <a href="../index.html"><img src="../imagenes/wwt logo.png" alt="logo de la pagina" id="pagIcon"></a>
+
+    <header id="headerContacto">
+        <a href="../index.html" id="iconoMenuLink"><img src="../imagenes/wwt logo.png" alt="logo de la pagina"
+                id="pagIcon"></a>
         <nav class="navBar">
+            <input type="checkbox" id="respMenu">
+            <label id="labelRespMenu" for="respMenu"><img src="../imagenes/hambMenuIcon.svg" id="hambMenuIcon"></label>
             <ul id="menuPag">
                 <li><a button class="navBarButton" href="../index.html">Inicio</a></li>
                 <li><a button class="navBarButton" href="./Destinos.html">Destinos</a></li>
@@ -23,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="mainContact">
         <div id="divContact">
             <h1 id="tituloContacto">Contáctanos</h1>
             <form id="formContact">
@@ -52,6 +56,26 @@
         <div id="helpWidgetButton">
             <a id="helpButton" href="./pag_5.html"></a>
         </div>
+    </main>
+    <aside id="asideContactanos">
+        <div id="mapaUbicacion">
+            <h2 id="tituloMapa">CÓMO LLEGAR HASTA NOSOTROS</h2>
+            <iframe id="ubicacionReal"
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d817.9529156714041!2d-56.169861644707076!3d-34.91117561535143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x959f81bad415b401%3A0x2aab69d1958699a8!2sDr.%20Pablo%20de%20Mar%C3%ADa%20992%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!3m2!1d-34.911131!2d-56.1703128!5e0!3m2!1ses-419!2suy!4v1643124414179!5m2!1ses-419!2suy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </aside>
+    <div id="contactosAlternativos">
+        <div>
+            <h2 id="tituloAlternativos">TAMBIÉN PUEDES CONTACTARNOS POR LAS SIGUIENTES VÍAS</h2>
+            <ul id="listaAlternativos">
+                <li class="listaContacto">Telefono fijo: 4333 3663</li>
+                <li class="listaContacto">Celular (+598) 91 333 333</li>
+                <li class="listaContacto">Mail worldwidetravel@viajes.com</li>
+            </ul>
+        </div>
+    </div>
+    <section id="sectionPatrocinador">
         <div id="patrocinador">
             <h2>Este sitio está desarrollado gracias a Coderhouse.</h2>
             <iframe id="videoP5" width="560" height="315" src="https://www.youtube.com/embed/YPJwPRTGmyw"
@@ -59,8 +83,10 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-    </main>
-    <footer>
+    </section>
+
+
+    <footer id="footerContacto">
         <div id="copyright">
             Todos los derechos Reservados.©Diciembre/2021
             Página desarrollada por Katriel Espino.

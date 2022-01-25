@@ -158,7 +158,7 @@ header {
 }
 /*Promociones*/
 #bodyP3 {
-    height: 100vh;
+    height: 100%;
     font-family: "Oswald";
     
 }
@@ -196,7 +196,7 @@ header {
     background-color: rgba(243, 226, 199, 0.5);
     border-radius: 10px;
     padding: 15px;
-    width: 10%;
+    
 }
 
 /*Reservas*/
@@ -209,22 +209,10 @@ header {
     background-attachment:fixed ;
 }
 
-#tituloReservas, #tituloContacto {
+#tituloReservas, #tituloContacto, #tituloMapa {
     margin-left: 10px;
 }
 
-#divFormReserva, #divContact, #patrocinador {
-    background-color: rgba(243, 226, 199, 0.5);
-    border-top: 5px solid #c0b096;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 104px;
-    margin-left: 300px;
-    margin-bottom: 40px;
-    border-radius: 3px;
-
-}
 #reservasTitulo {
     margin-bottom: 10px;
     width: 100%;
@@ -276,7 +264,7 @@ header {
 }
 /*Contáctanos*/
 #bodyP5 {
-height: 100vh;
+height: 100%;
 font-family: "Oswald";
 background-image: url(../imagenes/ImagenesBGP5.jpg);
 background-repeat: no-repeat;
@@ -286,12 +274,15 @@ background-attachment:fixed ;
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.listaContacto {
+    font-weight: bold;
+}
 #videoP5 {
     width: 100%;
     margin-bottom: 15px;
 }
 
+/*HELP BUTTON*/
 #helpWidgetButton {
     display:flex;
     justify-content: flex-end;
@@ -303,7 +294,7 @@ background-attachment:fixed ;
 #helpButton {
     width: 45px;
     height: 45px;
-    background-color:#f3e2c7;
+    background-color: rgba(243, 226, 199, 0.5);
     border-radius: 50%;
     background-image: url(../imagenes/helpIcon.svg);
     position: absolute;
@@ -326,13 +317,294 @@ footer {
     border-bottom: 15px solid #f3e2c7;
     font-style: default
 }
-/*los bordes se establecen con 3 valores
-grosor (-width)
-tipos de borde (border-style)
-color (-color)*/
-/* para resolver los problemas de superoposicion
-z-index
-menu
-items primeros position relative
-los segundos absolute
-*/
+
+@media (max-width: 480px) {
+    #hambMenuIcon {
+        max-height: 100%;
+        padding-top: 1px;
+    }
+    #menuPag {
+        display: none;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+    }
+    #respMenu:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+        background-color: #f3e2c7;
+    }
+
+    #respMenu {
+        display: none;
+    }
+    #labelRespMenu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;        
+        border-radius: 5px;
+        width:50px ;
+        height: 50px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+    .navBarButton {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    header {
+        flex-direction: row-reverse;
+    }
+
+    #pagIcon {
+        justify-items: center;
+    }
+    footer {
+        font-size: small;
+        max-width: 100%;
+    }
+    /*Promociones*/
+    #sectionPromociones {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #mainPromociones {
+        max-width: 100%;
+    }
+    .promocionesP3 {
+        max-width: 100%;
+        margin: 15px;
+    }
+
+    /*CONTÁCTANOS*/
+    #bodyP5 {
+        background-position: center;
+    }
+    #mainContact {
+        max-width: 100%;
+
+    }
+    #divContact {
+        align-items: center;
+        max-width: 100%;
+    }
+    #formContact {
+        max-width: 100%;
+    }
+    #divFormReserva, #divContact, #patrocinador, #contactosAlternativos, #asideContactanos {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+    #tituloMapa, .listaContacto {
+        font-weight: bold;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    .p5Label {
+        font-weight: bold;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width:1023px) {
+    #hambMenuIcon {
+        max-height: 100%;
+        padding-top: 1px;
+    }
+    #menuPag {
+        display: none;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+        width: 55%;
+    }
+    #respMenu:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+        background-color: #f3e2c7;
+    }
+
+    #respMenu {
+        display: none;
+    }
+    #labelRespMenu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;        
+        border-radius: 5px;
+        width:50px ;
+        height: 50px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+    .navBarButton {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    header {
+        flex-direction: row-reverse;
+    }
+    /*PROMOCIONES Y RESERVA*/
+   #sectionPromociones {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #mainPromociones {
+        max-width: 100%;
+    }
+    .promocionesP3 {
+        max-width: 100%;
+        margin: 15px;
+        width: 40%
+    }
+    #bodyP5 {
+        background-position: center;
+    }
+    #mainContact {
+        max-width: 100%;
+
+    }
+    #divContact {
+        align-items: center;
+        max-width: 100%;
+    }
+    #formContact {
+        max-width: 100%;
+    }
+    #divFormReserva, #divContact, #patrocinador, #contactosAlternativos, #asideContactanos {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+    #tituloMapa, .listaContacto {
+        font-weight: bold;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    .p5Label {
+        font-weight: bold;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    #hambMenuIcon {
+        display: none;
+    }
+    #respMenu {
+        display: none;
+    }
+    #divFormReserva, #divContact {
+        background-color: rgba(243, 226, 199, 0.5);
+        border-top: 5px solid #c0b096;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 104px;
+        margin-left: 200px;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+    #patrocinador, #mapaUbicacion, #contactosAlternativos {
+        background-color: rgba(243, 226, 199, 0.5);
+        border-top: 5px solid #c0b096;
+        width:60%;
+    }
+    #mapaUbicacion, #contactosAlternativos {
+        margin-top: 104px;
+    }
+
+
+    /*Contactanos*/
+    /*GRID AREAS*/
+    #bodyP5 {
+        display: grid;
+        grid-template-areas: 
+        "headercontact headercontact"
+        "maincontact mapacontact"
+        "maincontact contactalt"
+        "maincontact sectionpatrocinador"
+        "footercontact footercontact"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.443% 1fr 1fr 1fr 3.443%;
+    }
+    #mainContact, #asideContactanos, #sectionPatrocinador,  #contactosAlternativos {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #patrocinador, #contactosAlternativos, #divContact {
+        width: 60%;
+    }
+    
+    /*Nombres Grid Areas*/
+    #headerContacto {
+        grid-area: headercontact;
+    }
+
+    #mainContact {
+        grid-area: maincontact;
+
+    }
+
+    #asideContactanos {
+        grid-area: mapacontact;
+
+    }
+
+    #sectionPatrocinador {
+        grid-area: sectionpatrocinador;
+
+    }
+
+    #contactosAlternativos {
+        grid-area: contactalt;
+    }
+
+    #footerContacto {
+        grid-area: footercontact;
+    }
+    /*FIN NOMBRES GRIDAREAS*/
+
+    #mapaUbicacion {
+        padding: 5px;
+        width: 60%;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    #contactosAlternativos {
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #tituloAlternativos{
+        padding: 15px;
+    }
+    #listaAlternativos {
+        padding-left: 35px;
+    }
+
+    /*PROMOCIONES*/
+    .promocionesP3 {
+        width: 10%;
+    }
+}
